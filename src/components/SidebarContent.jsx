@@ -13,7 +13,7 @@ export default function SidebarContent({ setMessages }) {
       <li>
         <button
           onClick={clearChatHistory}
-          className="btn btn-outline btn-primary w-full flex items-center gap-2"
+          className="btn border-2 border-[#F2E2B1] hover:bg-[#F2E2B1] hover:text-[#BDB395] w-full flex items-center gap-2"
         >
           <Trash2 size={18} /> New Chat
         </button>
