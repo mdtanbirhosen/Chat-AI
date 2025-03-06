@@ -1,10 +1,12 @@
+"use client"
 import ChatApp from '@/components/ChatApp'
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Home() {
+  const [messages, setMessages] = useState([]);
   return (
     <div>
-      <ChatApp></ChatApp>
+      <ChatApp setMessages={setMessages} messages={messages}></ChatApp>
     </div>
   )
 }

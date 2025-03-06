@@ -1,12 +1,12 @@
 import React from 'react'
+import SidebarContent from './SidebarContent'
 
-export default function Sidebar() {
+export default function Sidebar({setMessages}) {
   return (
-    <div className="w-1/4 p-4 border-r bg-base-100">
-        <h2 className="text-lg font-semibold mb-4">Chat History</h2>
-        <div className="space-y-2">
-        side bar is here .
-        </div>
-      </div>
+    <div className="w-1/4 border-r bg-base-100 hidden lg:flex">
+      <ul className="menu bg-base-200 text-base-content min-h-full w-full overflow-auto">
+        <SidebarContent setMessages={setMessages}/>
+      </ul>
+    </div>
   )
 }
